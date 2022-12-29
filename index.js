@@ -1,12 +1,11 @@
 const { Client, LocalAuth } = require("whatsapp-web.js");
-require("dotenv").config();
 const qrcode = require("qrcode-terminal");
-const PREFIX = process.env.PREFIX_BOT ?? "!please";
-const BOT_NAME = process.env.BOT_NAME ?? "G-Bot Ai";
+const PREFIX = ".bro"
+const BOT_NAME = "G-Bot Ai";
 const { Configuration, OpenAIApi } = require("openai");
 
 const config = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: "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",
 });
 
 const openai = new OpenAIApi(config);
